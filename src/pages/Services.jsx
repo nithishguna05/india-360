@@ -17,7 +17,11 @@ const reviews = [
   { name: "Asha", text: "Wonderful experience!", rating: 5 },
   { name: "Ravi", text: "Great guide, amazing food.", rating: 4 },
   { name: "Meera", text: "Everything was so well organized!", rating: 5 },
-  { name: "Karan", text: "Comfortable hotels and smooth transport.", rating: 4 },
+  {
+    name: "Karan",
+    text: "Comfortable hotels and smooth transport.",
+    rating: 4,
+  },
   { name: "Priya", text: "Loved the adventure activities!", rating: 5 },
 ];
 
@@ -114,7 +118,7 @@ export default function Services() {
                           <FaStar key={index} />
                         ) : (
                           <FaRegStar key={index} />
-                        )
+                        ),
                       )}
                     </div>
                   </div>

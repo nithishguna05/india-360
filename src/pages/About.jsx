@@ -26,10 +26,10 @@ export default function About() {
               Who We Are
             </h3>
             <p className="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
-              We are passionate travelers and storytellers dedicated to
-              curating unforgettable journeys across India. From the bustling
-              streets of Delhi to the serene backwaters of Kerala, we bring you
-              experiences that go beyond sightseeing.
+              We are passionate travelers and storytellers dedicated to curating
+              unforgettable journeys across India. From the bustling streets of
+              Delhi to the serene backwaters of Kerala, we bring you experiences
+              that go beyond sightseeing.
             </p>
             <p className="mt-3 text-gray-600 dark:text-gray-400 leading-relaxed">
               Our mission is simple: to connect you with the heart of India
@@ -59,49 +59,44 @@ export default function About() {
                 </p>
               </div>
 
-<div className="mt-16 text-center">
-          <h3 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
-            Why Choose Us?
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
-              <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
-                ✅ Expert Guides
-              </h4>
-              <p className="mt-2 text-gray-600 dark:text-gray-400">
-                Our experienced local guides ensure you don’t just visit —
-                you truly experience every destination.
-              </p>
-            </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
-              <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
-                🏞️ Unique Experiences
-              </h4>
-              <p className="mt-2 text-gray-600 dark:text-gray-400">
-                From hidden gems to landmarks, we bring you a blend of
-                adventure, culture, and relaxation.
-              </p>
-            </div>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
-              <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
-                💼 Hassle-Free Planning
-              </h4>
-              <p className="mt-2 text-gray-600 dark:text-gray-400">
-                Sit back and relax while we handle all the logistics — so
-                you can enjoy your journey.
-              </p>
+              <div className="mt-16 text-center">
+                <h3 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
+                  Why Choose Us?
+                </h3>
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
+                    <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
+                      ✅ Expert Guides
+                    </h4>
+                    <p className="mt-2 text-gray-600 dark:text-gray-400">
+                      Our experienced local guides ensure you don’t just visit —
+                      you truly experience every destination.
+                    </p>
+                  </div>
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
+                    <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
+                      🏞️ Unique Experiences
+                    </h4>
+                    <p className="mt-2 text-gray-600 dark:text-gray-400">
+                      From hidden gems to landmarks, we bring you a blend of
+                      adventure, culture, and relaxation.
+                    </p>
+                  </div>
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:scale-105 transition">
+                    <h4 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
+                      💼 Hassle-Free Planning
+                    </h4>
+                    <p className="mt-2 text-gray-600 dark:text-gray-400">
+                      Sit back and relax while we handle all the logistics — so
+                      you can enjoy your journey.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-            </div>
-          </div>
-        </div>
-
-     
-        
   );
 }

@@ -18,7 +18,8 @@ export default function Footer() {
               India 360
             </h2>
             <p className="mt-3 text-gray-600 dark:text-gray-400 text-sm">
-              Discover India’s beauty with curated destinations, guided tours, and unforgettable experiences.
+              Discover India’s beauty with curated destinations, guided tours,
+              and unforgettable experiences.
             </p>
           </div>
 
@@ -28,10 +29,26 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-[var(--primary)] transition">Destinations</a></li>
-              <li><a href="#" className="hover:text-[var(--primary)] transition">Tours</a></li>
-              <li><a href="#" className="hover:text-[var(--primary)] transition">Services</a></li>
-              <li><a href="#" className="hover:text-[var(--primary)] transition">Contact</a></li>
+              <li>
+                <a href="#" className="hover:text-[var(--primary)] transition">
+                  Destinations
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[var(--primary)] transition">
+                  Tours
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[var(--primary)] transition">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[var(--primary)] transition">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -76,13 +93,18 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-sm">
           <p>© {new Date().getFullYear()} India 360. All rights reserved.</p>
           <div className="flex gap-4 mt-3 md:mt-0">
-            <a href="#" className="hover:text-[var(--primary)] transition">Privacy Policy</a>
-            <a href="#" className="hover:text-[var(--primary)] transition">Terms of Service</a>
-            <a href="#" className="hover:text-[var(--primary)] transition">Support</a>
+            <a href="#" className="hover:text-[var(--primary)] transition">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-[var(--primary)] transition">
+              Terms of Service
+            </a>
+            <a href="#" className="hover:text-[var(--primary)] transition">
+              Support
+            </a>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-

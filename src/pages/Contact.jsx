@@ -55,7 +55,8 @@ export default function Contact() {
               Contact Information
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Feel free to reach out to us via phone, email, or visit our office. We’d love to hear from you!
+              Feel free to reach out to us via phone, email, or visit our
+              office. We’d love to hear from you!
             </p>
             <div className="space-y-4">
               <p className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
@@ -65,7 +66,8 @@ export default function Contact() {
                 <FaEnvelope className="text-[var(--primary)]" /> india360.com
               </p>
               <p className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                <FaMapMarkerAlt className="text-[var(--primary)]" /> 123  Road, Coimbatore, TamilNadu, India
+                <FaMapMarkerAlt className="text-[var(--primary)]" /> 123 Road,
+                Coimbatore, TamilNadu, India
               </p>
             </div>
 

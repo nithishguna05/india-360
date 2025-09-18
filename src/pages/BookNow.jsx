@@ -2,7 +2,30 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Search, Plus, Minus } from "lucide-react"; // icons
 
-const places = ["Tamil Nadu", "Kerala", "Goa", "Delhi", "Mumbai", "Coimbatore", "ladakh", "Jaipur", "Agra", "Sikkim", "Manali", "Kolkata", "Pune", "Chennai", "Madurai", "Bangalore", "dharamshala", "Amritsar", "Shimla", "hampi", "Pondicherry", "Ramaswaram"];
+const places = [
+  "Tamil Nadu",
+  "Kerala",
+  "Goa",
+  "Delhi",
+  "Mumbai",
+  "Coimbatore",
+  "ladakh",
+  "Jaipur",
+  "Agra",
+  "Sikkim",
+  "Manali",
+  "Kolkata",
+  "Pune",
+  "Chennai",
+  "Madurai",
+  "Bangalore",
+  "dharamshala",
+  "Amritsar",
+  "Shimla",
+  "hampi",
+  "Pondicherry",
+  "Ramaswaram",
+];
 
 export default function BookNow() {
   const [location, setLocation] = useState("");
@@ -18,8 +41,8 @@ export default function BookNow() {
     if (value.length > 0) {
       setFilteredPlaces(
         places.filter((place) =>
-          place.toLowerCase().startsWith(value.toLowerCase())
-        )
+          place.toLowerCase().startsWith(value.toLowerCase()),
+        ),
       );
     } else {
       setFilteredPlaces([]);
@@ -34,7 +57,7 @@ export default function BookNow() {
     }
 
     alert(
-      `Searching Trips...\nLocation: ${location}\nDate: ${date}\nAdults: ${adults}\nKids: ${kids}`
+      `Searching Trips...\nLocation: ${location}\nDate: ${date}\nAdults: ${adults}\nKids: ${kids}`,
     );
   };
 
@@ -43,7 +66,6 @@ export default function BookNow() {
       <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="container mx-auto px-4 py-16 relative z-10 grid md:grid-cols-2 gap-10 items-center">
-        
         {/* Booking Form */}
         <motion.form
           onSubmit={handleSubmit}
@@ -151,18 +173,17 @@ export default function BookNow() {
 
             {/* Search Button (small circular with expand on hover) */}
             {/* Search Button */}
-<motion.button
-  type="submit"
-  whileHover={{ width: 140 }} // expands on hover
-  whileTap={{ scale: 0.95 }}
-  className="flex items-center justify-center gap-2 w-12 h-12 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300"
->
-  <Search size={20} />
-  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300 text-sm font-semibold">
-    Search
-  </span>
-</motion.button>
-
+            <motion.button
+              type="submit"
+              whileHover={{ width: 140 }} // expands on hover
+              whileTap={{ scale: 0.95 }}
+              className="flex items-center justify-center gap-2 w-12 h-12 bg-yellow-500 hover:bg-yellow-600 text-white rounded-full shadow-lg overflow-hidden transition-all duration-300"
+            >
+              <Search size={20} />
+              <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-300 text-sm font-semibold">
+                Search
+              </span>
+            </motion.button>
           </div>
         </motion.form>
 

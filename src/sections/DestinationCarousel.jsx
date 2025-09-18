@@ -4,15 +4,51 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const states = [
   { slug: "goa", name: "Goa", img: "/assets/DestinationCarousel/goa.jpg" },
-  { slug: "kerala", name: "Kerala", img: "/assets/DestinationCarousel/munnar.jpg" },
-  { slug: "rajasthan", name: "Rajasthan", img: "/assets/DestinationCarousel/rajasthan.jpg" },
-  { slug: "maharashtra", name: "Maharashtra", img: "/assets/DestinationCarousel/mumbai.avif" },
-  { slug: "delhi", name: "Delhi", img: "/assets/DestinationCarousel/delhi.jpg" },
-  { slug: "karnataka", name: "Karnataka", img: "/assets/DestinationCarousel/karanataka.jpg" },
-  { slug: "sikkim", name: "Sikkim", img: "/assets/DestinationCarousel/sikkim.jpg" },
-  { slug: "kashmir", name: "Kashmir", img: "/assets/DestinationCarousel/kashmir.jpg" },
-  { slug: "tamilnadu", name: "Tamil Nadu", img: "/assets/DestinationCarousel/tamilnadu.webp" },
-  { slug: "andhrapradesh", name: "Andhra Pradesh", img: "/assets/DestinationCarousel/andra.webp" },
+  {
+    slug: "kerala",
+    name: "Kerala",
+    img: "/assets/DestinationCarousel/munnar.jpg",
+  },
+  {
+    slug: "rajasthan",
+    name: "Rajasthan",
+    img: "/assets/DestinationCarousel/rajasthan.jpg",
+  },
+  {
+    slug: "maharashtra",
+    name: "Maharashtra",
+    img: "/assets/DestinationCarousel/mumbai.avif",
+  },
+  {
+    slug: "delhi",
+    name: "Delhi",
+    img: "/assets/DestinationCarousel/delhi.jpg",
+  },
+  {
+    slug: "karnataka",
+    name: "Karnataka",
+    img: "/assets/DestinationCarousel/karanataka.jpg",
+  },
+  {
+    slug: "sikkim",
+    name: "Sikkim",
+    img: "/assets/DestinationCarousel/sikkim.jpg",
+  },
+  {
+    slug: "kashmir",
+    name: "Kashmir",
+    img: "/assets/DestinationCarousel/kashmir.jpg",
+  },
+  {
+    slug: "tamilnadu",
+    name: "Tamil Nadu",
+    img: "/assets/DestinationCarousel/tamilnadu.webp",
+  },
+  {
+    slug: "andhrapradesh",
+    name: "Andhra Pradesh",
+    img: "/assets/DestinationCarousel/andra.webp",
+  },
 ];
 
 export default function DestinationCarousel() {
@@ -50,13 +86,14 @@ export default function DestinationCarousel() {
     <div className="w-full flex flex-col items-center px-4">
       {/* Carousel */}
       <div className="relative flex items-center justify-center w-full max-w-6xl">
-        
         {/* Left Slide (hidden on small screens) */}
         <div className="hidden md:block w-1/3 px-2 transform scale-90 blur-sm opacity-60 transition duration-500">
           <img
             src={states[getIndex(currentIndex - 1)].img}
             alt={states[getIndex(currentIndex - 1)].name}
-            onClick={() => nav(`/state/${states[getIndex(currentIndex - 1)].slug}`)}
+            onClick={() =>
+              nav(`/state/${states[getIndex(currentIndex - 1)].slug}`)
+            }
             className="rounded-2xl h-[200px] md:h-[350px] w-full object-cover shadow-lg hover:scale-105 hover:blur-0 hover:opacity-100 hover:shadow-xl transition duration-500 cursor-pointer"
           />
         </div>
@@ -75,7 +112,9 @@ export default function DestinationCarousel() {
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-yellow-400">
                 {states[currentIndex].name}
               </h2>
-              <p className="text-xs sm:text-sm md:text-base">Popular attractions & tours</p>
+              <p className="text-xs sm:text-sm md:text-base">
+                Popular attractions & tours
+              </p>
 
               {/* Explore Me Button */}
               <button
@@ -93,7 +132,9 @@ export default function DestinationCarousel() {
           <img
             src={states[getIndex(currentIndex + 1)].img}
             alt={states[getIndex(currentIndex + 1)].name}
-            onClick={() => nav(`/state/${states[getIndex(currentIndex + 1)].slug}`)}
+            onClick={() =>
+              nav(`/state/${states[getIndex(currentIndex + 1)].slug}`)
+            }
             className="rounded-2xl h-[200px] md:h-[350px] w-full object-cover shadow-lg hover:scale-105 hover:blur-0 hover:opacity-100 hover:shadow-xl transition duration-500 cursor-pointer"
           />
         </div>
@@ -149,7 +190,9 @@ export default function DestinationCarousel() {
               )}
               <div
                 className={`absolute inset-0 rounded-full pointer-events-none ${
-                  isActive ? "ring-2 ring-yellow-500" : "border-2 border-gray-400"
+                  isActive
+                    ? "ring-2 ring-yellow-500"
+                    : "border-2 border-gray-400"
                 }`}
               />
             </button>

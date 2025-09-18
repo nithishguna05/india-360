@@ -1,5 +1,5 @@
 /* e.g., in src/index.css or your global CSS */
-@import url('https://fonts.cdnfonts.com/css/brightwall');
+@import url("https://fonts.cdnfonts.com/css/brightwall");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,27 +8,34 @@
   --primary: #ef4444;
 }
 
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
-.hero-overlay { background: rgba(8,8,8,0.45); }
+.hero-overlay {
+  background: rgba(8, 8, 8, 0.45);
+}
 
 .ex {
   margin-bottom: 80px;
-background: none;
-font-size: 56px;
-font-weight: 500;
-color: rgb(245, 245, 6);
-text-shadow: 3px 5px 9px rgba(0, 0, 0, 0.5);
-font-family: 'Brightwall', sans-serif;
-text-align: center;
-padding: 10px 20px;
-cursor: pointer;
-position: relative;
-z-index: 1;
+  background: none;
+  font-size: 56px;
+  font-weight: 500;
+  color: rgb(245, 245, 6);
+  text-shadow: 3px 5px 9px rgba(0, 0, 0, 0.5);
+  font-family: "Brightwall", sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
-.vo{
-  font-family: 'Brightwall', sans-serif;
+.vo {
+  font-family: "Brightwall", sans-serif;
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 600;
@@ -36,13 +43,10 @@ z-index: 1;
   text-align: center;
   cursor: pointer;
   z-index: 1;
-
 }
 .de {
-  font-family: 'Brightwall', sans-serif;
+  font-family: "Brightwall", sans-serif;
   /* font-size: 12px; */
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
-
 }

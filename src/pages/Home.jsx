@@ -1,18 +1,18 @@
-import React from 'react'
-import HeroCarousel from '../sections/HeroCarousel'
-import DestinationCarousel from '../sections/DestinationCarousel'
-import Packages from './Tours'
-import BookNow from './BookNow'
-import About from './About'
-import Gallery from './Gallery'
-import Contact from './Contact'
-import Services from './Services'
+import React from "react";
+import HeroCarousel from "../sections/HeroCarousel";
+import DestinationCarousel from "../sections/DestinationCarousel";
+import Packages from "./Tours";
+import BookNow from "./BookNow";
+import About from "./About";
+import Gallery from "./Gallery";
+import Contact from "./Contact";
+import Services from "./Services";
 
-export default function Home(){
+export default function Home() {
   return (
     <div>
       <HeroCarousel />
-    
+
       <section id="dest" className="container mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold text-center mb-8">Destination</h2>
         <DestinationCarousel />
@@ -31,7 +31,7 @@ export default function Home(){
       <section id="dest" className="container mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold text-center mb-8">Gallery</h2>
         <Gallery />
-      </section>      
+      </section>
 
       <section id="dest" className="container mx-auto px-4 py-12">
         {/* <h2 className="text-3xl font-bold text-center mb-8">About Us</h2> */}
@@ -43,17 +43,10 @@ export default function Home(){
         <Services />
       </section>
 
-
-       <section id="dest" className="container mx-auto px-4 py-12">
+      <section id="dest" className="container mx-auto px-4 py-12">
         <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
         <Contact />
       </section>
-
-
-      
-
-
-      
     </div>
-  )
+  );
 }
