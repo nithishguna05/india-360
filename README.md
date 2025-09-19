@@ -52,9 +52,6 @@ It showcases destinations, packages, booking features, and a responsive design f
 
 ## ⚙️ Setup & Installation
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/india-360.git
    cd india-360
    npm install
    npm run dev
