@@ -25,7 +25,7 @@ It showcases destinations, packages, booking features, and a responsive design f
 
 ### Packages Page
 
-![Packages](public/assets/screenshot/pakage.png)
+![Packages](public/assets/screenshot/package.png)
 
 ### DEstination Page
 
